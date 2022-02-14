@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM</title>
+
+  <!-- -------Font awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------Bootstrap CSS stylesheet ---------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- ---------Vanilla CSS---------------------  -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="w-75 mx-auto">
+  <header></header>
+  <!-- ---------------------------------Main code starts here------------------------------  -->
+  <main>
+    <section class="container mt-5 mb-5">
+      <article class="row gap-4">
+        <!-------------------------- Image add section  ------------------------------------>
+        <div class="col">
+          <img src="images/mac.png" class="img-fluid" alt="" />
+          <!-- --------------Specifications---------- -->
+
+          <p class="mt-3">
+          <p>
+            Apple M1 chip with 8-core CPU with 4 performances and 4 efficiency cores ,
+          </p>
+          <p>
+            7-core GPU and 16-core Neural Engine
+          </p>
+          <p>
+            *GB unified memory
+          </p>
+          <p>
+            256GB SSD storage
+          </p>
+          <p>
+            Two Thunderbolt / USB 4 ports Magic Mouse
+          </p>
+          <p>
+            Magic KeyBoard-US English
+          </p>
+          </p>
+        </div>
+        <!-- ----------Customization Section -------------- -->
+        <div class="col mx-3">
+          <!------------------- heading------------ -->
+
+          <h1 class="fw-bold">iMac with Apple M1 Chip</h1>
+
+          <!----------------------- Customization Options-------------------- -->
+
+          <!-------------------- Customization buttons--------------- -->
+          <div class="margin-top d-flex align-items-center">
+            <p class="bold me-5">Memory</p>
+
+            <p role="button" class="p4 button-style" id="eightGB">
+              8GB Unified Memory
+            </p>
+            <p role="button" class="p4 button-style" id="sixteenGB">
+              <i class="fa-solid fa-circle-plus"></i> 16GB Unified Memory
+            </p>
+
+          </div>
+          <div class="margin-top d-flex align-items-center">
+            <p class="bold me-5">Storage</p>
+
+            <p role="button" class="p4 button-style" id="ssd1">
+              256GB SSD Storage
+            </p>
+            <p role="button" class="p4 button-style" id="ssd2">
+              <i class="fa-solid fa-circle-plus"></i> 512GB SSD Storage
+            </p>
+            <p role="button" class="p4 button-style" id="ssd3">
+              <i class="fa-solid fa-circle-plus"></i> 1TB SSD Storage
+            </p>
+          </div>
+          <div class="margin-top d-flex align-items-center">
+            <p class="bold me-5">Choose your delivery option</p>
+            
+            <p role="button" class="p4 button-style" id="free-delivery">
+              Friday, Aug 25 FREE Prime Delivery
+            </p>
+            <p role="button" class="p4 button-style" id="paid-delivery">
+              <i class="fa-solid fa-circle-plus"></i> Friday, Aug21 Delivery Charge $20
+            </p>
+          </div>
+          <!-- -----------Prices After Customization---------------------  -->
+          <div class="margin-top row">
+            <div class="col-5">
+              <p class="bold">Best Price</p>
+              <p class="bold">Extra Memory Cost</p>
+              <p class="bold">Extra Storage Cost</p>
+              <p class="bold">Delivery Charge</p>
+            </div>
+            <div class="col-2">
+              <p class="bold">$<span id="best-price">1299</span></p>
+              <p class="bold">$<span id="memory-cost">0</span></p>
+              <p class="bold">$<span id="storage-cost">0</span></p>
+              <p class="bold">$<span id="delivery-cost">0</span></p>
+            </div>
+            <div class="col-7">
+              <hr class="bold-line" />
+            </div>
+          </div>
+          <!-- -----------------Total Price -------------------- -->
+          <div class="row reduce-margin">
+            <div class="col-5">
+              <p class="bold">Total Price</p>
+            </div>
+            <div class="col-2">
+              <p class="bold">$<span id="total-price">1299</span></p>
+            </div>
+          </div>
+          <!-- ----------promo code section-------------  -->
+          <div class="row margin-top mb-3">
+            <div class="flex">
+              <p class="bold">Add promo Code</p>
+              <input type="text" class="p-2" id="promo-input" placeholder="Enter Promo Code" />
+              <button class="btn-secondary rounded py-2 px-3" id="apply-btn">Apply</button>
+              <p class="text-success d-none" id="applied-text">Coupon applied</p>
+              <p class="text-danger d-none">Couldn't apply coupon</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- -----------Bootstrap Javascript  -------------------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- -----------vanilla Javascript ------------------------ -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
